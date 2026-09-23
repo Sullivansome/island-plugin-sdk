@@ -1,0 +1,15 @@
+[package]
+name = "island-plugin-api"
+version.workspace = true
+edition.workspace = true
+license = "MIT"
+repository.workspace = true
+description = "Island plugin protocol types (no GUI)"
+publish = false
+
+[dependencies]
+base64.workspace = true
+island-design = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
