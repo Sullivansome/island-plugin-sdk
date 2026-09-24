@@ -75,35 +75,61 @@
       ],
       "latest": "0.1.0",
       "repository": "https://github.com/Sullivansome/agent-pulse",
-      "homepage": "https://github.com/Sullivansome/agent-pulse",
+      "homepage": "https://island-agent-pulse.pages.dev/",
       "releases": [],
       "website": {
+        "$schema": "https://island-companion.pages.dev/schemas/plugin-website-v1.schema.json",
         "schema_version": 1,
         "id": "com.sullivansome.agent-pulse",
         "name": "Agent Pulse",
-        "summary": "Your coding agents, one glance away.",
-        "description": "Follow Claude Code, Codex, and the official Grok CLI using local lifecycle hooks. See working sessions, permission requests, and ended turns without opening every terminal. Connect once, then review the hooks in Codex.",
+        "summary": "Local session status for Claude Code, Codex, and the official Grok CLI.",
+        "description": "Follow your coding sessions from one compact Island surface. Local lifecycle hooks report activity, supported questions, and ended turns. Hover to explore the scrollable session list and open a session from its row. Codex permission hooks do not identify whether approval is manual or automatic, so they are not treated as confirmed requests for human input. Requires a compatible Island host; the plugin itself is MIT licensed.",
         "links": {
-          "homepage": "https://github.com/Sullivansome/agent-pulse",
-          "documentation": "https://github.com/Sullivansome/agent-pulse#connect",
+          "homepage": "https://island-agent-pulse.pages.dev/",
+          "documentation": "https://island-agent-pulse.pages.dev/#setup",
           "support": "https://github.com/Sullivansome/agent-pulse/issues",
           "source": "https://github.com/Sullivansome/agent-pulse"
         },
         "features": [
           {
-            "title": "Know when you are needed",
-            "description": "Permission requests and supported questions appear ahead of working sessions."
+            "title": "Stay compact while agents work",
+            "description": "The island stays compact until you hover. Explore a scrollable list of open sessions, with requests for input above ongoing work."
           },
           {
-            "title": "Three agents, one view",
-            "description": "Main sessions from Claude Code, Codex, and the official Grok CLI. Open a session in Codex, or copy a CLI resume command from the secondary menu."
+            "title": "Step in when you’re needed",
+            "description": "Supported questions and confirmed attention states move to the top. An ended turn stays distinct from a request for input. Codex automatic approval signals do not become amber warnings."
           },
           {
-            "title": "Local status only",
-            "description": "No transcript scanning, prompt collection, API keys, or remote status service. Additive setup preserves existing hooks."
+            "title": "Return to the right session",
+            "description": "Open an exact Codex desktop task, or return to a recorded terminal application on macOS. Terminal tab selection depends on the application; a resume command is available when direct opening is unavailable."
           }
         ],
-        "previews": []
+        "previews": [
+          {
+            "url": "https://island-agent-pulse.pages.dev/previews/expanded.png",
+            "label": "All agents",
+            "alt": "Agent Pulse example with Claude Code requesting permission, Codex working, and a Grok turn ended",
+            "caption": "Actual plugin renderer, illustrative sessions. An attention request sorts above working and ended turns."
+          },
+          {
+            "url": "https://island-agent-pulse.pages.dev/previews/working.png",
+            "label": "Working",
+            "alt": "Agent Pulse renderer example showing a Grok session working",
+            "caption": "A lifecycle signal reports work in progress. A long silent task can become No recent signal."
+          },
+          {
+            "url": "https://island-agent-pulse.pages.dev/previews/attention.png",
+            "label": "Needs you",
+            "alt": "Agent Pulse renderer example showing a Claude Code permission request",
+            "caption": "Claude Code permission-request example. Codex review signals alone do not confirm a human prompt."
+          },
+          {
+            "url": "https://island-agent-pulse.pages.dev/previews/complete.png",
+            "label": "Turn ended",
+            "alt": "Agent Pulse renderer example showing a Grok turn ended",
+            "caption": "A Stop event ends one turn. It does not prove a larger task is complete. Closed sessions are removed."
+          }
+        ]
       }
     }
   ]
