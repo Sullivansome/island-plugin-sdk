@@ -8,6 +8,8 @@ MIT-licensed IPC protocol, client SDK, and shared design tokens for Island plugi
 | `island-plugin-sdk` | Rust IPC client for a host-provided endpoint and per-launch token |
 | `island-design` | Shared geometry, colors, motion and component tokens |
 
+[Island app and purchase terms](https://island.brighteng.org/pricing/) · [More from bright](https://me.brighteng.org/)
+
 ## Build and test
 
 Requires stable Rust with edition 2024 support (Rust 1.85 or newer).

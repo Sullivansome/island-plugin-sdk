@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://island-companion.pages.dev/schemas/plugin-website-v1.schema.json",
+  "$id": "https://island.brighteng.org/schemas/plugin-website-v1.schema.json",
   "title": "Island Plugin Website v1",
   "description": "Presentation metadata; release artifacts, permissions and runtime compatibility stay in the curated catalog.",
   "type": "object",

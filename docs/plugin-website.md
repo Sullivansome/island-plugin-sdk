@@ -10,7 +10,7 @@ Serve `/.well-known/island-plugin.json` from the website's origin with HTTP 200 
 <link rel="island-plugin" type="application/json" href="/.well-known/island-plugin.json">
 ```
 
-The [JSON Schema](plugin-website-v1.schema.json) describes the format. The live schema is hosted at `https://island-companion.pages.dev/schemas/plugin-website-v1.schema.json`. [Spotify's descriptor](https://github.com/Sullivansome/spotify-lyrics/blob/main/website/plugin.json) is the reference implementation and the content source for its website.
+The [JSON Schema](plugin-website-v1.schema.json) describes the format. The live schema is hosted at `https://island.brighteng.org/schemas/plugin-website-v1.schema.json`. [Spotify's descriptor](https://github.com/Sullivansome/spotify-lyrics/blob/main/website/plugin.json) is the reference implementation and the content source for its website.
 
 | Field | Contract | Market rendering |
 | --- | --- | --- |
